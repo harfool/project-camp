@@ -1,7 +1,6 @@
 import app from './app.js'
 import dotenv from 'dotenv'
 import connectDB from './db/dbConnect.js'
-
 dotenv.config({
     path: './.env'
 })
@@ -17,3 +16,4 @@ connectDB()
 console.error("Mongo connection Error :" , error)
 process.exit(1)
 })
+
